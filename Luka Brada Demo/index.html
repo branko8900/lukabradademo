@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Luka Brada · Online sistem treninga i ishrane</title>
+  <meta name="description" content="Nije još jedan PDF. Online sistem treninga i ishrane koji te vodi od prvog treninga do rezultata: plan, beleženje, statistika napretka i nedeljne korekcije. Luka Brada, personalni trener, Novi Sad.">
+
+  <!-- DEMO: ukloniti pre prave objave -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta name="theme-color" content="#0E0F11">
+
+  <!-- Open Graph / deljenje linka.
+       VAŽNO: og:url i og:image moraju biti apsolutni URL-ovi.
+       Zameniti https://luka-brada.netlify.app pravim domenom posle objave. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:site_name" content="Luka Brada · Personalni trener">
+  <meta property="og:title" content="Nije još jedan PDF. Online sistem treninga i ishrane">
+  <meta property="og:description" content="Sistem koji te vodi od prvog treninga do rezultata. Plan, beleženje, statistika napretka i nedeljne korekcije — Luka Brada, personalni trener.">
+  <meta property="og:url" content="https://luka-brada.netlify.app/">
+  <meta property="og:image" content="https://luka-brada.netlify.app/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Luka Brada — Online sistem treninga i ishrane">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E0F11'/%3E%3Cpath d='M14 44 L26 32 L34 38 L50 20' fill='none' stroke='%23F3A43B' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css?v=19">
+  <script>document.documentElement.classList.add('js');</script>
+  <script defer src="main.js?v=8"></script>
+</head>
+<body>
+
+<!-- Ikonice (inline SVG sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.8v6.4l5.2-3.2z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="12.5" height="12" rx="2"/><path d="M15.5 10.2 21 7v10l-5.5-3.2"/></symbol>
+    <symbol id="i-workspace" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M6.5 7v10M3.5 9.5v5M17.5 7v10M20.5 9.5v5M6.5 12h11"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M7 3v7.5a2 2 0 0 0 2 2V21M5 3v5M9 3v5"/><path d="M17 21V3c-2.2 1.6-3 4.4-3 7.5 0 1.6.9 2.5 3 2.5"/></symbol>
+    <symbol id="i-log" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 4.5V3h6v1.5M8.8 13l2.2 2.2 4.2-4.4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M7.5 15.5l4-4.5 3 2.5L20 7"/></symbol>
+    <symbol id="i-archive" viewBox="0 0 24 24"><path d="M6 3.5h12"/><rect x="3" y="6.5" width="18" height="14" rx="2"/><path d="M10.5 10.6v5.8l4.6-2.9z"/></symbol>
+    <symbol id="i-adjust" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+    <symbol id="i-call" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M10.5 13v5l4-2.5z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-dm" viewBox="0 0 24 24"><path d="M21 3 10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5z"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#sadrzaj">Preskoči na sadržaj</a>
+
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Luka Brada, početak stranice">
+      <span class="brand-name">Luka Brada</span>
+      <span class="brand-role">Personalni trener</span>
+    </a>
+    <nav class="main-nav" aria-label="Glavna navigacija">
+      <ul>
+        <li><a href="#sistem">Sistem</a></li>
+        <li><a href="#saradnja">Saradnja</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://ig.me/m/lulee_personal.trainer" target="_blank" rel="noopener">Prijavi se</a>
+  </div>
+</header>
+
+<main id="sadrzaj">
+
+  <!-- 1 · HERO — fotografija preko celog ekrana, tekst preko nje -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media">
+      <img src="images/luka-hero.jpg" alt="Luka Brada tokom treninga sa bučicom" width="1440" height="1590" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1 class="display hero-title" id="hero-title" data-split>Sistem koji te vodi do rezultata.</h1>
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Online trener · Novi Sad</p>
+        <p class="lead">Trening, ishrana i napredak na jednom mestu uz trenera koji svake nedelje gleda tvoje brojeve i koriguje plan.</p>
+        <div class="cta-row" data-hero-cta>
+          <a class="btn btn-primary btn-lg" href="https://ig.me/m/lulee_personal.trainer" target="_blank" rel="noopener">Prijavi se za online sistem<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-glass btn-lg" href="#saradnja">Kako izgleda saradnja</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · ŠTA DOBIJAŠ -->
+  <section class="section section--light" id="sistem" aria-labelledby="features-title">
+    <div class="wrap">
+      <div class="sec-index"><span>Šta dobijaš</span><span>9 delova sistema</span></div>
+      <h2 class="display h2" id="features-title" data-reveal>Sve što ti treba, povezano u jedan sistem.</h2>
+
+      <ul class="features">
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-video"/></svg>
+          <span class="feature-tag">Start</span>
+          <h3>Uvodne video konsultacije i upitnik</h3>
+          <p>Pre prvog treninga upoznajem tvoj cilj, iskustvo, navike i ograničenja.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-workspace"/></svg>
+          <span class="feature-tag">Platforma</span>
+          <h3>Personalizovan radni prostor</h3>
+          <p>Mesto samo za tebe: plan, ishrana, beleške i napredak na jednom mestu.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-dumbbell"/></svg>
+          <span class="feature-tag">Trening</span>
+          <h3>Individualni plan treninga</h3>
+          <p>Sa video tutorijalom za svaku vežbu, da tačno znaš kako se izvodi.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-food"/></svg>
+          <span class="feature-tag">Ishrana</span>
+          <h3>Plan ishrane</h3>
+          <p>Tačne namirnice, količine, recepti i makronutrijenti — prema tvojim ciljevima, navikama i životnom stilu.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-log"/></svg>
+          <span class="feature-tag">Podaci</span>
+          <h3>Beleženje svakog treninga</h3>
+          <p>Serije, ponavljanja i kilaže ostaju zapisani. Ništa se ne pogađa.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-chart"/></svg>
+          <span class="feature-tag">Podaci</span>
+          <h3>Statistika napretka</h3>
+          <p>Grafikoni, telesna težina, merenja, fotografije i performanse.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-archive"/></svg>
+          <span class="feature-tag">Tehnika</span>
+          <h3>Arhiva treninga i video snimaka</h3>
+          <p>Snimci tvojih serija na jednom mestu, za analizu tehnike.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-adjust"/></svg>
+          <span class="feature-tag">Korekcije</span>
+          <h3>Nedeljno prilagođavanje programa</h3>
+          <p>Program se menja na osnovu onoga što pokažu tvoji podaci.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <svg class="ic ic-lg" aria-hidden="true"><use href="#i-call"/></svg>
+          <span class="feature-tag">Podrška</span>
+          <h3>Video poziv jednom nedeljno</h3>
+          <p>Analiza, korekcije i sledeći koraci — uživo, licem u lice.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 · KAKO IZGLEDA SARADNJA -->
+  <section class="section" id="saradnja" aria-labelledby="steps-title">
+    <div class="wrap">
+      <div class="sec-index"><span>Kako izgleda saradnja</span><span>5 koraka</span></div>
+      <h2 class="display h2" id="steps-title" data-reveal>Od prijave do rezultata, korak po korak.</h2>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <span class="step-num">01</span>
+          <h3>Prijava i upitnik</h3>
+          <p>Popuniš prijavu na ovoj stranici, a zatim upitnik: cilj, iskustvo, raspored, ishrana i povrede.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">02</span>
+          <h3>Uvodne video konsultacije</h3>
+          <p>Razgovaramo uživo: šta želiš da postigneš, šta ti je do sada smetalo i kako izgleda tvoja nedelja.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">03</span>
+          <h3>Pristup tvom radnom prostoru</h3>
+          <p>Dobijaš plan treninga sa video tutorijalima i plan ishrane — sve na jednom mestu, samo za tebe.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">04</span>
+          <h3>Treniraš i beležiš</h3>
+          <p>Upisuješ svaki trening: serije, ponavljanja, kilaže. Ključne serije snimaš za analizu tehnike.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">05</span>
+          <h3>Nedeljni video poziv i korekcije</h3>
+          <p>Gledamo podatke, ispravljamo tehniku i prilagođavamo program za sledeću nedelju.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<div class="sticky-cta" data-sticky-cta aria-hidden="true">
+  <a class="btn btn-primary btn-block" href="https://ig.me/m/lulee_personal.trainer" target="_blank" rel="noopener" tabindex="-1">Prijavi se za online sistem<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+</div>
+
+</body>
+</html>
